@@ -1040,28 +1040,14 @@
         </div>
     </div>
 
+    
     <!-- La Modale Carrousel pour STM32 -->
     <div id="modal-stm32" class="modal">
         <span class="close-modal-btn" onclick="closeModal('modal-stm32')" style="position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer; text-decoration: none;">&times;</span>
         
         <div style="position: relative; margin: auto; padding: 0; width: 80%; max-width: 900px; top: 50%; transform: translateY(-50%);">
             
-
-
-            <!-- Slide 1 : La 1ère Vidéo -->
-            <div class="mySlides-stm32 fade">
-                <video autoplay loop muted playsinline controls style="width:100%; max-height: 65vh; background-color: #000; border-radius: 12px 12px 0 0; display: block;">
-                    <source src="medias/STM32.mp4" type="video/mp4">
-                </video>
-                <div style="background-color: #1a1a1a; padding: 24px; text-align: center; border-radius: 0 0 12px 12px; border: 1px solid rgba(255,255,255,0.1); border-top: none;">
-                    <h4 style="margin: 0 0 10px 0; color: #2997ff;"> Démonstration Matérielle STM32</h4>
-                    <p style="margin: 0; color: #888; font-size: 0.95rem; line-height: 1.5;">
-                        <strong>Simulation Thermique :</strong> Aperçu du fonctionnement de la carte en action. Acquisition des données capteurs et interfaçage I2C.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Slide 2 : L'Interface Graphique (LCD) -->
+            <!-- Slide 1 : L'Interface Graphique (LCD) - MAINTENANT EN PREMIER -->
             <div class="mySlides-stm32 fade">
                 <div style="width:100%; height: 65vh; background-color: #0a0a0a; border-radius: 12px 12px 0 0; display: flex; justify-content: center; align-items: center; padding: 20px;">
                     <!-- On place l'image dans un faux écran pour lui donner un style matériel -->
@@ -1070,9 +1056,22 @@
                     </div>
                 </div>
                 <div style="background-color: #1a1a1a; padding: 24px; text-align: center; border-radius: 0 0 12px 12px; border: 1px solid rgba(255,255,255,0.1); border-top: none;">
-                    <h4 style="margin: 0 0 10px 0; color: #2997ff;"> Interface Homme-Machine (IHM)</h4>
+                    <h4 style="margin: 0 0 10px 0; color: #2997ff;"> Human-Machine Interface (HMI)</h4>
                     <p style="margin: 0; color: #888; font-size: 0.95rem; line-height: 1.5;">
-                        <strong>Affichage LCD TFT :</strong> Programmation de l'interface utilisateur embarquée pour la restitution en temps réel des variables thermiques (température, puissance, état de la simulation).
+                        <strong>TFT LCD Display:</strong> Programming the embedded user interface for real-time rendering of thermal variables (temperature, power, simulation state).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 2 : La 1ère Vidéo (STM32.mp4) - MAINTENANT EN DEUXIÈME -->
+            <div class="mySlides-stm32 fade">
+                <video autoplay loop muted playsinline controls style="width:100%; max-height: 65vh; background-color: #000; border-radius: 12px 12px 0 0; display: block;">
+                    <source src="medias/STM32.mp4" type="video/mp4">
+                </video>
+                <div style="background-color: #1a1a1a; padding: 24px; text-align: center; border-radius: 0 0 12px 12px; border: 1px solid rgba(255,255,255,0.1); border-top: none;">
+                    <h4 style="margin: 0 0 10px 0; color: #2997ff;"> STM32 Hardware Demonstration</h4>
+                    <p style="margin: 0; color: #888; font-size: 0.95rem; line-height: 1.5;">
+                        <strong>Thermal Simulation:</strong> Overview of the board in action. Sensor data acquisition and I2C interfacing.
                     </p>
                 </div>
             </div>
@@ -1081,22 +1080,22 @@
             <div class="mySlides-stm32 fade">
                 <img src="medias/control_1_PUIS40.jpg" style="width:100%; max-height: 65vh; object-fit: contain; background-color: #000; border-radius: 12px 12px 0 0;">
                 <div style="background-color: #1a1a1a; padding: 24px; text-align: center; border-radius: 0 0 12px 12px; border: 1px solid rgba(255,255,255,0.1); border-top: none;">
-                    <h4 style="margin: 0 0 10px 0; color: #2997ff;"> Montage Physique & Oscilloscope</h4>
+                    <h4 style="margin: 0 0 10px 0; color: #2997ff;"> Physical Setup & Oscilloscope</h4>
                     <p style="margin: 0; color: #888; font-size: 0.95rem; line-height: 1.5;">
-                        <strong>Analyse des signaux :</strong> Validation matérielle avec visualisation des signaux de commande directement sur l'oscilloscope pour garantir la précision de la régulation.
+                        <strong>Signal Analysis:</strong> Hardware validation with visualization of control signals directly on the oscilloscope to ensure regulation accuracy.
                     </p>
                 </div>
             </div>
 
-            <!-- Slide 3 : La 2ème Vidéo (control_2) -->
+            <!-- Slide 4 : La 2ème Vidéo (control_2) -->
             <div class="mySlides-stm32 fade">
                 <video autoplay loop muted playsinline controls style="width:100%; max-height: 65vh; background-color: #000; border-radius: 12px 12px 0 0; display: block;">
                     <source src="medias/control_2.mp4" type="video/mp4">
                 </video>
                 <div style="background-color: #1a1a1a; padding: 24px; text-align: center; border-radius: 0 0 12px 12px; border: 1px solid rgba(255,255,255,0.1); border-top: none;">
-                    <h4 style="margin: 0 0 10px 0; color: #2997ff;">Interface de Contrôle Live</h4>
+                    <h4 style="margin: 0 0 10px 0; color: #2997ff;">Live Control Interface</h4>
                     <p style="margin: 0; color: #888; font-size: 0.95rem; line-height: 1.5;">
-                        <strong>Acquisition logicielle :</strong> Suivi en temps réel des variations de température sur l'interface PC en communication directe avec le microcontrôleur.
+                        <strong>Software Acquisition:</strong> Real-time tracking of temperature variations on the PC interface in direct communication with the microcontroller.
                     </p>
                 </div>
             </div>
